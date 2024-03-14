@@ -21,10 +21,10 @@ view: perf_contrast {
     type: number
     sql: ${TABLE}.SPMON ;;
   }
+
   dimension: spmon1 {
     type: date
-    sql: ${TABLE}.SPMON ;;
-    html:{{ rendered_value | date: "%Y/%m" }};;
+    sql: ${TABLE}.SPMON;;
   }
 
   dimension: sum_curr_plan_wgt {
