@@ -24,7 +24,7 @@ view: perf_contrast {
 
   dimension: spmon1 {
     type: date
-    sql: ${TABLE}.SPMON;;
+    sql: concat(${spmon},"");;
   }
 
   dimension: sum_curr_plan_wgt {
