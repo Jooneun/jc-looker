@@ -23,7 +23,7 @@ view: perf_contrast {
   }
 
   dimension: spmon1 {
-    type: date
+    type: string
     sql: concat(${spmon},"");;
   }
 
