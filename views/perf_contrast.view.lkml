@@ -50,11 +50,11 @@ view: perf_contrast {
     drill_fields: [werks_name]
   }
   measure: SUM_PLAN_WGT {
-    type: count
+    type: sum
     drill_fields: [sum_plan_plwgt]
   }
   measure: SUM_RESULT_WGT {
-    type: count
+    type: sum
     drill_fields: [sum_result_wgt]
   }
 
