@@ -52,10 +52,12 @@ view: perf_contrast {
   measure: SUM_PLAN_PLWGT {
     type: sum
     drill_fields: [sum_plan_plwgt]
+    value_format: "0.##"
   }
   measure: SUM_RESULT_WGT {
     type: sum
     drill_fields: [sum_result_wgt]
+    value_format: "0.##"
   }
 
 
