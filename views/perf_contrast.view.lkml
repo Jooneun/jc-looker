@@ -21,6 +21,12 @@ view: perf_contrast {
     type: number
     sql: ${TABLE}.SPMON ;;
   }
+  dimension: spmon1 {
+    type: date
+    sql: ${TABLE}.SPMON ;;
+    html:{{ rendered_value | date: "%Y/%m" }};;
+  }
+
   dimension: sum_curr_plan_wgt {
     type: number
     sql: ${TABLE}.SUM_CURR_PLAN_WGT ;;
@@ -59,6 +65,10 @@ view: perf_contrast {
     drill_fields: [sum_result_wgt]
     value_format: "0.##"
   }
-
+  measure: SUM_CURR_PLAN_WGT {
+    type: sum
+    drill_fields: [sum_curr_plan_wgt]
+    value_format: "0.##"
+  }
 
 }
